@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/CODE_Feature_0.1.4.201710201242.jar" id="CODE_Feature" version="0.1.4.201710201242">
+      <category name="code.ide"/>
+   </feature>
+   <category-def name="code.ide" label="COBOL">
+      <description>
+         COBOL Developing Environment [CODE]
+      </description>
+   </category-def>
+</site>
