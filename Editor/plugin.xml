@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.ui.editors">
+      <editor
+            class="biz.ritter.develop.cobol.editor.COBOLSourceEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="true"
+            extensions="cbl, cob, cpy"
+            icon="icons/source.cbl.16.16.png"
+            id="biz.ritter.develop.cobol.editor.COBOLSourceEditor"
+            name="COBOL Editor">
+      </editor>
+   </extension>
+  <extension
+        point="org.eclipse.ui.editors.documentProviders">
+     <provider
+           class="biz.ritter.develop.cobol.editor.COBOLSourceDocumentProvider"
+           extensions="cbl"
+           id="biz.ritter.develop.cobol.editor.COBOLSourceDocumentProvider">
+     </provider>
+  </extension>
+</plugin>
