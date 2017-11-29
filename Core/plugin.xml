@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension id="CODE_Builder" name="COBOL Builder" point="org.eclipse.core.resources.builders">
+      <builder hasNature="true">
+         <run class="biz.ritter.develop.cobol.builder.GnuCOBOLProjectBuilder" />
+      </builder>
+   </extension>
+
+   <extension id="CODENature" name="COBOL Nature" point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run class="biz.ritter.develop.cobol.nature.ProjectNature" />
+      </runtime>
+      <builder id="CODE_Core.CODE_Builder" />
+   </extension>
+
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category id="category.COBOL" name="COBOL">
+      </category>
+      <wizard
+            category="category.COBOL"
+            class="biz.ritter.develop.cobol.wizard.NewProject"
+            hasPages="true"
+            id="biz.ritter.develop.cobol.NewProjectWizard"
+            name="COBOL Project"
+            project="true">
+      </wizard>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page 
+            class="biz.ritter.develop.cobol.prefs.COBOLBuildPathPreferencePage"
+            id="prefs.COBOLBuildPath"
+            name="BuildPath"
+            category="prefs.COBOL">
+      </page>
+      <page
+            class="biz.ritter.develop.cobol.prefs.COBOLCompilerPreferencePage"
+            id="prefs.COBOLCompiler"
+            name="Compiler"
+            category="prefs.COBOL">
+      </page>
+      <page
+            class="biz.ritter.develop.cobol.prefs.COBOLPreferencePage"
+            id="prefs.COBOL"
+            name="COBOL">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="biz.ritter.develop.cobol.prefs.COBOLPreferenceInitializer">
+      </initializer>
+   </extension>
+
+   <extension point="org.eclipse.ui.ide.projectNatureImages">
+   			<image
+   			    icon="icons/nature.cobol.16.16.png"
+   			    natureId="CODE_Core.CODENature"
+   			    id="CODENatureImage"/>
+   </extension>
+   <extension
+         id="code"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="%productName">
+         <property
+               name="windowImages"
+               value="eclipse.gif,eclipse32.gif,eclipse48.gif,eclipse.png,eclipse32.png">
+         </property>
+         <property
+               name="aboutText"
+               value="%productBlurb">
+         </property>
+         <property
+               name="aboutImage"
+               value="eclipse_lg.gif">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="C8D5EA">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,280,455,15">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,220,441,20">
+         </property>
+         <property
+               name="appName"
+               value="%productName">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

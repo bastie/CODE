@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/biz/ritter/develop/cobol/builder/AbstractIncrementalProjectBuilder.java=UTF-8
+encoding//src/biz/ritter/develop/cobol/builder/BuilderSAM.java=UTF-8
+encoding//src/biz/ritter/develop/cobol/builder/GnuCOBOLProjectBuilder.java=UTF-8
+encoding//src/biz/ritter/develop/cobol/builder/GnuCOBOLTargetBuilder.java=UTF-8
+encoding//src/biz/ritter/develop/cobol/builder/io/doc-files/build.target.cpy=UTF-8

@@ -1,0 +1,84 @@
+Usage: cobc [options] file...
+
+Options:
+  --help                Display this message
+  --version, -V         Display compiler version
+  -v                    Display the programs invoked by the compiler
+  -x                    Build an executable program
+  -m                    Build a dynamically loadable module (default)
+  -std=<dialect>        Compile for a specific dialect :
+                          cobol2002   Cobol 2002
+                          cobol85     Cobol 85
+                          ibm         IBM Compatible
+                          mvs         MVS Compatible
+                          bs2000      BS2000 Compatible
+                          mf          Micro Focus Compatible
+                          default     When not specified
+                        See config/default.conf and config/*.conf
+  -free                 Use free source format
+  -fixed                Use fixed source format (default)
+  -O, -O2, -Os          Enable optimization
+  -g                    Produce debugging information in the output
+  -debug                Enable all run-time error checking
+  -o <file>             Place the output into <file>
+  -b                    Combine all input files into a single
+                        dynamically loadable module
+  -E                    Preprocess only; do not compile, assemble or link
+  -C                    Translation only; convert COBOL to C
+  -S                    Compile only; output assembly file
+  -c                    Compile and assemble, but do not link
+  -t <file>             Generate and place a program listing into <file>
+  -I <directory>        Add <directory> to copy/include search path
+  -L <directory>        Add <directory> to library search path
+  -l <lib>              Link the library <lib>
+  -D <define>           Pass <define> to the C compiler
+  -conf=<file>          User defined dialect configuration - See -std=
+  --list-reserved       Display reserved words
+  --list-intrinsics     Display intrinsic functions
+  --list-mnemonics      Display mnemonic names
+  -save-temps(=<dir>)   Save intermediate files (default current directory)
+  -MT <target>          Set target file used in dependency list
+  -MF <file>            Place dependency list into <file>
+  -ext <extension>      Add default file extension
+
+  -W                    Enable ALL warnings
+  -Wall                 Enable all warnings except as noted below
+  -Wobsolete            Warn if obsolete features are used
+  -Warchaic             Warn if archaic features are used
+  -Wredefinition        Warn incompatible redefinition of data items
+  -Wconstant            Warn inconsistent constant
+  -Wparentheses         Warn lack of parentheses around AND within OR
+  -Wstrict-typing       Warn type mismatch strictly
+  -Wimplicit-define     Warn implicitly defined data items
+  -Wcall-params         Warn non 01/77 items for CALL params (NOT set with -Wall
+)
+  -Wcolumn-overflow     Warn text after column 72, FIXED format (NOT set with -W
+all)
+  -Wterminator          Warn lack of scope terminator END-XXX (NOT set with -Wal
+l)
+  -Wtruncate            Warn possible field truncation (NOT set with -Wall)
+  -Wlinkage             Warn dangling LINKAGE items (NOT set with -Wall)
+  -Wunreachable         Warn unreachable statements (NOT set with -Wall)
+
+  -ftrace               Generate trace code (Executed SECTION/PARAGRAPH)
+  -ftraceall            Generate trace code (Executed SECTION/PARAGRAPH/STATEMEN
+TS)
+  -fsyntax-only         Syntax error checking only; don't emit any output
+  -fdebugging-line      Enable debugging lines ('D' in indicator column)
+  -fsource-location     Generate source location code (Turned on by -debug or -g
+)
+  -fimplicit-init       Do automatic initialization of the Cobol runtime system
+  -fsign-ascii          Numeric display sign ASCII (Default on ASCII machines)
+  -fsign-ebcdic         Numeric display sign EBCDIC (Default on EBCDIC machines)
+
+  -fstack-check         PERFORM stack checking (Turned on by -debug or -g)
+  -ffold-copy-lower     Fold COPY subject to lower case (Default no transformati
+on)
+  -ffold-copy-upper     Fold COPY subject to upper case (Default no transformati
+on)
+  -fnotrunc             Do not truncate binary fields according to PICTURE
+  -ffunctions-all       Allow use of intrinsic functions without FUNCTION keywor
+d
+  -fmfcomment           '*' or '/' in column 1 treated as comment (FIXED only)
+  -fnull-param          Pass extra NULL terminating pointers on CALL statements
+
