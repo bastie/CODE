@@ -114,7 +114,7 @@ public class GnuCOBOLProjectBuilder extends AbstractIncrementalProjectBuilder {
     
     // FIXME COBOL Source file types intend hard codes extensions
     final String qualifiedPath = resource.getLocation().toOSString();
-    if ("cbl".equals(resource.getFileExtension())
+    if ("cbl".equals(resource.getFileExtension()) 
         || "cob".equals(resource.getFileExtension())) {
       try {
         final IPath bin = this.getProject().getLocation().append("/bin");
@@ -154,7 +154,7 @@ public class GnuCOBOLProjectBuilder extends AbstractIncrementalProjectBuilder {
         final StringBuilder errorOutput = new StringBuilder();
         int RC = p.waitFor();
         //RC = p.exitValue();
-        String s;
+        String s; 
         while ((s = compilerNormalOutput.readLine()) != null) {
           normalOutput.append(s);
         }
