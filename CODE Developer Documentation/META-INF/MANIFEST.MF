@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CODE Developer Documentation
+Bundle-SymbolicName: CODE_Developer_Documentation;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Sebastian Ritter
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: CODE_Developer_Documentation

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Registrieren eines FileTypes</title>
+</head>
+<body>
+  <p  id="preample">
+    <i>
+      Für eine IDE benötigen wir auch einen passenen Dateityp (FileType). Diesen wollen wir entsprechend
+      registrieren, einem Editor zuordnen und mit einem Icon versehen.</i>
+  <p>
+  <h2>Eclipse FileType</h2>
+  <ul>
+    <li>Erstellen eines PlugIn Projektes.</li>
+    
+    <li>plugin.xml bearbeiten und die Extensions <code>org.eclipse.core.contenttype.contentTypes</code> hinzufügen.
+      <br/><small>Wir definieren hier, ob unser Dateityp textorientiert ist und auch welches Encoding er
+        nutzt.</small>
+      <br/><div id="sample"><i> Beispielhaft fügen wir den Dateityp mit der Endung <code>ctf</code> und
+        einem Defaultdateinamen ein.
+        <br/><img src="./img/NewFileTypeCore.png" width="80%" height="40%"/>
+        </i></div>
+      <p/>
+      Nach dem Start der IDE können wir als Ergebnis sehen, dass wir einen FileType CODE eingeführt hat mit
+      unserer Definition der Defaultdateiendungen und -namen. Warum ist dies interessant? Diese Defaultbezeichnungen
+      sind nicht durch den Anwender änderbar, und wir können uns später auf diese  -naja- verlassen.
+      <br/><div id="sample"><i>Und so sehen die Eigenschaften dann aus:
+      <br/><img src="./img/NewFileTypeCoreResult.png" width="70%" height="40%"/>
+      </i></div>
+    </li>
+      
+    <li>plugin.xml bearbeiten und die Extensions <code>org.eclipse.team.core.fileTypes</code> hinzufügen.
+      <br/><small>Wir definieren hier, ob unser Dateityp textorientiert oder binär ist.</small>
+      <br/>Dies wiederholen wir beliebig oft.
+      <br/><div id="sample"><i>Beispielhaft fügen wir den Dateityp mit der Endung <code>ctf</code> ein.
+        <br/><img src="./img/NewFileTypeTeam.png" width="80%" height="40%"/>
+        </i></div>
+      <p/>
+      Nach einem Start der IDE können wir als Ergebnis in den Eigenschaften sehen, dass ctf Dateien bei
+      uns Textdatei sind. Warum ist dies interessant? Source Code Managementsystem wie SVN, GIT, ...
+      finden dies nützlich um uns zu unterstützen.
+      <br/><div id="sample"><i>Und so sehen die Eigenschaften dann aus:
+      <br/><img src="./img/NewFileTypeTeamResult.png" width="70%" height="40%"/>
+      </i></div>
+    </li>
+  </ul>
+  
+  <p id="notes">
+    <i>Mit diesen Schritten können wir einen neuen Dateityp registrieren.</i>
+  </p>
+  
+</body>
+</html>
