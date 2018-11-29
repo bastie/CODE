@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<welcomePage 
+	title="COBOL Development Environment"
+	format="nowrap">
+
+<intro><b>Welcome to the COBOL Development Environment (a.k.a. CODE)!</b></intro>
+
+<item>For more information please visit the plugin home page at http://code.google.com/a/eclipselabs.org/p/code/.</item>
+
+<item>Enjoy! Sebastian Nerger & Sebastian Ritter</item>
+
+</welcomePage>

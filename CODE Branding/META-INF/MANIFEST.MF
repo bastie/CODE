@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: COBOL CODE
+Bundle-SymbolicName: CODE_Branding;singleton:=true
+Bundle-Version: 0.1.2.qualifier
+Bundle-Activator: biz.ritter.develop.cobol.BrandingActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ CODE_Core;bundle-version="0.2.0",
+ CODE_Editors;bundle-version="0.1.1",
+ CODE_FileTypes;bundle-version="1.0.0",
+ CODE_Documentation;bundle-version="0.0.1",
+ org.eclipse.core.variables,
+ org.eclipse.ui.intro,
+ org.eclipse.ui.intro.universal
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-Vendor: Sebastian Ritter
+Automatic-Module-Name: CODE_Branding
