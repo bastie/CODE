@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="CODEDocumentation-introExtension" style="css/sample.css" name="Sample Extension" path="samples/@">
+		<group style-id="content-group" id="CODEDocumentation-introLink-group">
+       		<link label="CODE Beispiele" url="./content.de/index.html" id="CODEDocumentation-introLink" style-id="content-link">
+          		<text>Beispiele für Dich zum Start mit COBOL und der IDE</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>

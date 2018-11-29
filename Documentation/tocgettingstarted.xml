@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Starten mit CODE" link_to="toc.xml#gettingstarted"> 
+	<topic label="Einführung in CODE"  href="html/gettingstarted/introductionintocode.html"> 
+		<topic label="CODE vorgestellt" href="html/gettingstarted/firstviewoncode.html" />
+  <topic href="html/gettingstarted/firstcobolproject.html" label="Ein erstes COBOL Projekt">
+  </topic>
+  <topic href="html/gettingstarted/usecobolbuildfiles.html" label="COBOL Build Dateien verwenden">
+  </topic> 
+	</topic>
+	<topic label="Main Topic 2">
+		<topic label="Sub Topic 2" href="html/gettingstarted/subtopic2.html" />
+	</topic> 
+</toc>

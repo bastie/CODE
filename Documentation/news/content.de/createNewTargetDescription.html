@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='../css/sample.css'>
+    <meta charset='utf-8'>  
+  </head>
+  <body>
+    <h1>Arbeiten mit Target Beschreibungsdateien</h1>
+    <p>
+      <strong>CODE</strong> ermöglicht die Erstellung von Beschreibungsdateien 
+      (COBOL build file description) für
+      die Erstellung unserer Kompilate.
+      Die Dateien enden mit <code>cbf</code> für <strong>C</strong>OBOL <strong>b</strong>uild 
+      <strong>f</strong>ile. Wir können in einem Projekt beliebig viele dieser Dateien
+      hinzufügen.  
+      Die Beschreibungsdateien entsprechen
+      vom Aufbau unseren <strong>COBOL</strong> Dateien und enthalten in Spalte
+      7 entsprechende Annotationen zu der Zeile. 
+    </p>
+    <table border='1'>
+      <thead>
+        <tr><th>Annotation</th><th>Bedeutung</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>*</td><td>Kommentarzeile</td></tr>
+        <tr><td>T</td><td><code>=EXECUTABLE</code> erzeugt ein ausführbares Programm.<br/>
+                        Die nachfolgenden Zeilen beschreiben dieses Programm.
+                      </td></tr>
+        <tr><td>T</td><td><code>=LIBRARY</code> erzeugt ein Bibliothek.<br/>
+                        Die nachfolgenden Zeilen beschreiben diese Bibliothek.
+                      </td></tr>
+        <tr><td>N</td><td><code>Name</code> des Kompilats (Programm oder Bibliothek).</td></tr>
+        <tr><td><a name='innerLinkContent' />C</td><td>Inhalt der dem Kompilat hinzugefügt werden soll. <br/>
+                          Dahinter ist der voll qualifizierte Dateiname zu schreiben.
+                       </td></tr>
+        <tr><td>&lt;SPACE&gt;</td><td><a href='#innerLinkContent'>Alternativschreibweise für C</a></td></tr>
+      </tbody>
+    </table>
+    <p>
+      ...oder für uns (aus der Dokumentation von BuildTargetCpyReader):
+      <pre>
+01 COBOL-FORMAT                  PIC X(80).
+  05 SEQUENCE-NUMBER               PIC X(6).
+  05 INDICATOR-AREA                PIC X.
+    88 INDICATOR-COMMENT             VALUE '*'.
+    88 TARGET-NAME                   VALUE 'N'.
+    88 TARGET-TYPE                   VALUE 'T'.
+    88 TARGET-CONTENT                VALUE 'C', ' '.
+  05 PROGRAM-TEXT                  PIC X(65).
+  05 REFERENCE-AREA                PIC X(8).
+01 FILLER REDEFINES COBOL-FORMAT.
+  05 SEQUENCE-NUMBER               PIC X(6).
+  05 ACCEPTED-TARGET-TYPES         PIC X(74).
+    88 TARGET-TYPE-EXECUTABLE        VALUE 'T=EXECUTABLE'.
+    88 TARGET-TYPE=LIBRARY           VALUE 'T=LIBRARY'.
+      </pre>
+      
+  </body>
+</html>

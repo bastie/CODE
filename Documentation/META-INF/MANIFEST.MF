@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CODE Documentation
+Bundle-SymbolicName: CODE_Documentation;singleton:=true
+Bundle-Version: 0.0.3.qualifier
+Bundle-Vendor: Sebastian Ritter
+Require-Bundle: org.eclipse.ui.intro,
+  org.eclipse.ui.intro.universal,
+  org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: CODE_Documentation

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+  	<extensionContent id="CODEDocumentation-introExtension" style="css/sample.css" name="Sample Extension" path="whatsnew/@">
+		<group style-id="content-group" id="CODEDocumentation-introLink-group">
+       		<link label="CODE Neuigkeiten" url="./content.de/index.html" id="CODEDocumentation-introLink" style-id="content-link">
+          		<text>Erfahre jetzt, was es Neues, Spannendes zu entdecken gibt</text>
+       		</link>
+       	</group>
+  	</extensionContent>
+</introContent>
