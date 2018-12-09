@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="CODE_Developer_Feature"
+      label="CODE_Developer_Feature"
+      version="0.0.3.qualifier"
+      provider-name="Sebastian Ritter"
+      plugin="CODE_Branding">
+
+   <description url="https://github.com/bastie/CODE">
+      COBOL Developer Environment [CODE] provides an Eclipse
+based IDE system and informations about it is implemented.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Lizenziert unter der EUPL, nur Version 1.1 (&quot;Lizenz&quot;);
+Sie dürfen dieses Werk ausschließlich gemäß
+dieser Lizenz nutzen.
+Eine Kopie der Lizenz finden Sie hier:
+http://ec.europa.eu/idabc/eupl5
+Sofern nicht durch anwendbare Rechtsvorschriften
+gefordert oder in schriftlicher Form vereinbart, wird
+die unter der Lizenz verbreitete Software &quot;so wie sie
+ist&quot;, OHNE JEGLICHE GEWÄHRLEISTUNG ODER BEDINGUNGEN -
+ausdrücklich oder stillschweigend - verbreitet.
+Die sprachspezifischen Genehmigungen und Beschränkungen
+unter der Lizenz sind dem Lizenztext zu entnehmen.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Copyright © 2010, 2017 Sebastian Ritter
+   </license>
+
+   <plugin
+         id="CODE_Developer_Documentation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

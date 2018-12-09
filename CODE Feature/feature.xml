@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="CODE_Feature"
+      label="CODE"
+      version="0.1.5.qualifier"
+      provider-name="Sebastian Ritter"
+      plugin="CODE_Branding">
+
+   <description url="https://github.com/bastie/CODE">
+      COBOL Developer Environment [CODE] provides an Eclipse
+based IDE system.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright © 2010, 2017 Sebastian Ritter
+   </copyright>
+
+   <license url="http://ec.europa.eu/idabc/eupl.html">
+      Lizenziert unter der EUPL, nur Version 1.1 (&quot;Lizenz&quot;);
+Sie dürfen dieses Werk ausschließlich gemäß
+dieser Lizenz nutzen.
+Eine Kopie der Lizenz finden Sie hier:
+http://ec.europa.eu/idabc/eupl5
+Sofern nicht durch anwendbare Rechtsvorschriften
+gefordert oder in schriftlicher Form vereinbart, wird
+die unter der Lizenz verbreitete Software &quot;so wie sie
+ist&quot;, OHNE JEGLICHE GEWÄHRLEISTUNG ODER BEDINGUNGEN -
+ausdrücklich oder stillschweigend - verbreitet.
+Die sprachspezifischen Genehmigungen und Beschränkungen
+unter der Lizenz sind dem Lizenztext zu entnehmen.
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.team.core"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.ui" version="3.109.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.13.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.12.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.11.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.12.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.variables"/>
+   </requires>
+
+   <plugin
+         id="CODE_FileTypes"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="CODE_Core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="CODE_Editors"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="CODE_Branding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="CODE_Documentation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <data
+         id="license/EUPL.de.pdf"
+         download-size="0"
+         install-size="0"/>
+
+</feature>

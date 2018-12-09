@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/CODE_Feature_0.1.1.qualifier.jar" id="CODE_Feature" version="0.1.1.qualifier">
+      <category name="COBOL"/>
+   </feature>
+   <category-def name="COBOL" label="CODE">
+      <description>
+         COBOL Development Environment
+      </description>
+   </category-def>
+</site>
