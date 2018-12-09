@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1" key="org.eclipse.pde.ui.synchronizeFeatueEnvironment.mode"/>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="org.eclipse.pde.ui.PLUGIN_STATUS_DIALOG">
+		<item value="400" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="371" key="DIALOG_HEIGHT"/>
+		<item value="520" key="DIALOG_X_ORIGIN"/>
+		<item value="151" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="editBundleContainerWizard">
+		<item value="http://download.eclipse.org/releases/2018-09/" key="selectedRepository"/>
+		<item value="true" key="groupByCategory"/>
+		<item value="true" key="showVersions"/>
+	</section>
+</section>

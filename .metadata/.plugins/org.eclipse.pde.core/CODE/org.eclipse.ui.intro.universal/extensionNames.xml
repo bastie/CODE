@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<contributor name="org.eclipse.pde"/>
+<contributor name="org.eclipse.m2e.core.ui"/>
+<contributor name="org.eclipse.ui.intro"/>
+<contributor name="org.eclipse.mylyn.help.ui"/>
+<contributor name="org.eclipse.jdt"/>
+<contributor name="org.eclipse.epp.mpc.ui"/>
+<contributor name="CODE_Documentation"/>
+<contributor name="org.eclipse.rap.tools.intro"/>
+<contributor name="org.eclipse.pde.ui"/>
+<contributor name="org.eclipse.platform"/>
+<contributor name="org.eclipse.swtbot.eclipse.ui"/>
+<contributor name="org.eclipse.egit.doc"/>
+<contributor name="org.eclipse.recommenders.rcp"/>
+<contributor name="org.eclipse.ui.intro.universal"/>
+</root>

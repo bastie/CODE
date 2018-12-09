@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: COBOL Core
+Bundle-SymbolicName: CODE_Core;singleton:=true
+Bundle-Version: 0.3.1.qualifier
+Bundle-Activator: biz.ritter.develop.cobol.CorePlugInActivator
+Bundle-Vendor: Sebastian Ritter
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ CODE_FileTypes;bundle-version="1.0.1";resolution:=optional;visibility:=reexport,
+ org.eclipse.ui.console
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Export-Package: biz.ritter.develop.cobol;uses:="org.osgi.framework,org.eclipse.ui.plugin",
+ biz.ritter.develop.cobol.builder;uses:="org.eclipse.core.runtime,org.eclipse.ui.console,org.eclipse.core.resources",
+ biz.ritter.develop.cobol.core;uses:="org.eclipse.core.runtime,org.eclipse.core.resources"

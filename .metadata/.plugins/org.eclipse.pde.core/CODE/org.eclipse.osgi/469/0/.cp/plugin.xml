@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="org.eclipse.swtbot.eclipse.ui.SWTBotLaunchConfigurationDelegate"
+            delegateDescription="This test launcher is used to run and debug SWTBot tests"
+            delegateName="SWTBot Test Launcher"
+            id="org.eclipse.swtbot.eclipse.ui.launcher.JunitLaunchConfig"
+            migrationDelegate="org.eclipse.pde.internal.ui.launcher.PDEMigrationDelegate"
+            modes="run, debug"
+            name="SWTBot Test"
+            sourceLocatorId="org.eclipse.pde.ui.launcher.PDESourceLookupDirector"
+            sourcePathComputerId="org.eclipse.jdt.launching.sourceLookup.javaSourcePathComputer">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            type="org.eclipse.swtbot.eclipse.ui.launcher.JunitLaunchConfig"
+            class="org.eclipse.swtbot.eclipse.ui.launcher.SWTBotJUnitTabGroup"
+            id="org.eclipse.swtbot.eclipse.ui.launcher.JUnitTabGroup">
+         <launchMode
+               description="Create a configuration that will launch a SWTBot test in debug mode."
+               perspective="org.eclipse.debug.ui.DebugPerspective"
+               mode="debug">
+         </launchMode>
+         <launchMode
+               description="Create a configuration that will launch a SWTBot test."
+               mode="run">
+         </launchMode>
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="org.eclipse.swtbot.eclipse.ui.launcher.JunitLaunchConfig"
+            icon="icons/swtbot_run16.png"
+            id="org.eclipse.swtbot.eclipse.ui.launchConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.jdt.junit.junitLaunchConfigs">
+      <launchConfigType
+            configTypeID="org.eclipse.swtbot.eclipse.ui.launcher.JunitLaunchConfig">
+      </launchConfigType>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="SWTBot Test"
+            description="SWTBot Test"
+            categoryId="org.eclipse.debug.ui.category.run"
+            id="org.eclipse.swtbot.eclipse.ui.junitShortcut.run">
+      </command>
+      <command
+            name="SWTBot Test"
+            description="SWTBot Test"
+            categoryId="org.eclipse.debug.ui.category.run"
+            id="org.eclipse.swtbot.eclipse.ui.junitShortcut.debug">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            sequence="M3+M2+X S"
+            commandId="org.eclipse.swtbot.eclipse.ui.junitShortcut.run"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            sequence="M3+M2+D S"
+            commandId="org.eclipse.swtbot.eclipse.ui.junitShortcut.debug"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="org.eclipse.swtbot.eclipse.ui.launcher.SWTBotLaunchShortcut"
+            description="Launch an SWTBot Test"
+            icon="icons/swtbot_debug16.png"
+            id="org.eclipse.swtbot.eclipse.ui.junitShortcut"
+            label="SWTBot Test"
+            modes="run, debug">
+            <contextualLaunch>
+            <enablement>
+               <with variable="selection">
+                  <count value="1"/>
+               	  <iterate>
+                      <adapt type="org.eclipse.jdt.core.IJavaElement">
+		                <test property="org.eclipse.jdt.core.isInJavaProjectWithNature" value="org.eclipse.pde.PluginNature"/>
+		                <test property="org.eclipse.jdt.core.hasTypeOnClasspath" value="junit.framework.Test"/>
+		                <test property="org.eclipse.jdt.junit.canLaunchAsJUnit" forcePluginActivation="true"/>
+		             </adapt>
+		          </iterate>
+               </with>
+            </enablement>
+         </contextualLaunch>
+            <configurationType
+                  id="org.eclipse.swtbot.eclipse.ui.launcher.JunitLaunchConfig"></configurationType>
+      </shortcut>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="org.eclipse.swtbot.eclipse.ui.preferences.SWTBotPreferencePage"
+            id="org.eclipse.swtbot.eclipse.ui.preferences.SWTBotPreferencePage"
+            name="SWTBot Preferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.eclipse.swtbot.eclipse.ui.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="org.eclipse.swtbot.eclipse.ui.preferences.PreferenceInitializer"></startup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.configExtension">
+      <configExtension
+            configId="org.eclipse.ui.intro.universalConfig"
+            content="intro/tutorialsExtensionContent.xml">
+      </configExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+          id="org.eclipse.swtbot.wizards"
+          name="SWTBot">
+      </category>
+      <wizard
+            class="org.eclipse.swtbot.eclipse.ui.wizards.NewSWTBotTestPluginWizard"
+            finalPerspective="org.eclipse.pde.ui.PDEPerspective"
+            icon="icons/swtbot_plugin16.png"
+            id="org.eclipse.swtbot.eclipse.ui.wizards.NewSWTBotTestPluginWizard"
+            name="SWTBot Test Plug-in"
+            project="true"
+            category="org.eclipse.swtbot.wizards">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <!-- This is used in other plugins to contribute views into a common SWTBot category. -->
+      <category
+            name="SWTBot"
+            id="org.eclipse.swtbot">
+      </category>
+   </extension>
+</plugin>

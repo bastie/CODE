@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Built-By: genie.releng
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_162
+
+Name: epl-2.0.html
+SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
+
+Name: build.properties
+SHA-256-Digest: JP3L7L4MUAgmYEJrZZp3Hb37wXHKh5VtGRjqNYBSvmY=
+
+Name: feature.xml
+SHA-256-Digest: TLXR6DdE5ZJNpHi3MsAyvyQ3zYgwWgoQv0GJxGYKdV0=
+
+Name: feature.properties
+SHA-256-Digest: 65EAbPSwAZq/oTtWf6a9Q2fPO1ywY3Wf7IHt9j9RU4k=
+
+Name: license.html
+SHA-256-Digest: Dv5NbrV590iFepPFp4HDAA9w8zkHSynRW5FCE+FLHVM=
+

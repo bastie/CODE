@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.platform.source" version="4.9.0.v20180906-1121" label="%featureName" provider-name="%providerName">
+  <includes id="org.eclipse.platform" version="4.9.0.v20180906-1121"/>
+  <description>
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.apache.ant.source" version="1.10.5.v20180808-0324" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ant.core.source" version="3.5.200.v20180822-0553" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="com.jcraft.jsch.source" version="0.1.54.v20170116-1932" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.compare.core.source" version="3.6.300.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.compare.source" version="3.7.300.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.compare.win32.source" version="1.2.200.v20180827-1041" download-size="0" install-size="0" os="win32" unpack="false"/>
+  <plugin id="org.eclipse.core.filebuffers.source" version="3.6.300.v20180822-1339" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.core.filesystem.source" version="1.7.200.v20180828-0158" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.core.net.source" version="1.3.300.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.core.resources.source" version="3.13.100.v20180828-0158" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.osgi.util.source" version="3.5.100.v20180827-1536" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.debug.core.source" version="3.13.0.v20180821-1744" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.debug.ui.source" version="3.13.100.v20180827-0649" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.equinox.event.source" version="1.4.300.v20180827-1235" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ltk.core.refactoring.source" version="3.9.100.v20180828-0626" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ltk.ui.refactoring.source" version="3.9.200.v20180828-0626" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.platform.source" version="4.9.0.v20180906-0745" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.search.source" version="3.11.300.v20180822-1339" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.team.core.source" version="3.8.300.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.team.ui.source" version="3.8.200.v20180827-1338" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.text.source" version="3.7.0.v20180822-1511" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.jface.text.source" version="3.14.0.v20180824-1140" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.jsch.core.source" version="1.3.200.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.jsch.ui.source" version="1.3.200.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.console.source" version="3.8.100.v20180821-1744" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.intro.source" version="3.5.300.v20180823-1505" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.intro.universal.source" version="3.3.300.v20180821-0700" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.cheatsheets.source" version="3.5.300.v20180823-1505" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.browser.source" version="3.6.300.v20180828-0837" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.genericeditor.source" version="1.1.100.v20180824-1616" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.monitoring.source" version="1.1.300.v20180828-1350" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.navigator.source" version="3.7.200.v20180828-0837" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.navigator.resources.source" version="3.6.200.v20180828-0837" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.net.source" version="1.3.300.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.workbench.texteditor.source" version="3.11.100.v20180824-1030" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.views.source" version="3.9.200.v20180828-0837" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.editors.source" version="3.11.200.v20180822-1511" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.externaltools.source" version="3.4.200.v20180821-1744" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.ide.source" version="3.14.100.v20180828-1350" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.ide.application.source" version="1.3.0.v20180828-1350" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.win32.source" version="3.4.100.v20180828-0838" download-size="0" install-size="0" ws="win32" unpack="false"/>
+  <plugin id="org.eclipse.core.variables.source" version="3.4.200.v20180821-1744" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.forms.source" version="3.7.300.v20180828-1350" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.views.properties.tabbed.source" version="3.8.200.v20180828-0837" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.source" version="1.2.500.v20180827-1235" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.ui.source" version="1.2.100.v20180827-1235" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.win32.x86.source" version="1.1.100.v20180827-1235" download-size="0" install-size="0" os="win32" arch="x86" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.win32.x86_64.source" version="1.1.100.v20180827-1235" download-size="0" install-size="0" os="win32" arch="x86_64" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.macosx.source" version="1.101.100.v20180827-1235" download-size="0" install-size="0" os="macosx" unpack="false"/>
+  <plugin id="org.eclipse.equinox.security.linux.x86_64.source" version="1.1.100.v20180827-1235" download-size="0" install-size="0" os="linux" arch="x86_64" unpack="false"/>
+  <plugin id="org.eclipse.core.externaltools.source" version="1.1.200.v20180821-1744" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.themes.source" version="1.2.200.v20180828-1350" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.core.runtime.source" version="3.15.0.v20180817-1401" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ui.intro.quicklinks.source" version="1.0.300.v20180821-0700" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.team.genericeditor.diff.extension.source" version="1.0.200.v20180827-1041" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.urischeme.source" version="1.0.0.v20180828-1120" download-size="0" install-size="0" unpack="false"/>
+  <includes id="org.eclipse.rcp.source" version="4.9.0.v20180906-1121"/>
+  <includes id="org.eclipse.equinox.p2.user.ui.source" version="2.4.100.v20180829-1443"/>
+  <includes id="org.eclipse.help.source" version="2.2.300.v20180906-0745"/>
+  <plugin id="org.eclipse.platform.doc.isv" version="4.9.0.v20180905-1254" download-size="0" install-size="0" unpack="false"/>
+</feature>
