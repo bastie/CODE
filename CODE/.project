@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CODE</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>LICENSE.md</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/LICENSE.md</locationURI>
+		</link>
+		<link>
+			<name>README.md</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/README.md</locationURI>
+		</link>
+		<link>
+			<name>package.json</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/package.json</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
