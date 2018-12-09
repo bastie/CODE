@@ -19,3 +19,14 @@ COBOL Development Environment
 5. Download CODE repository from https://github.com/bastie/CODE/archive/master.zip and extract this.
 6. Select `Install New Software` (Help Menu), add the `CODE UpdateSite` directory from extracted CODE repository (deselect catagory) accept license and test the new COBOL Eclipse features. 
 
+#### Install CODE
+##### Online
+1. Use ´https://github.com/bastie/CODE/raw/master/CODE UpdateSite´ as Update Site URL
+(Deselect category)
+![If you do not see this image, please take your glasses!](./EclipseUpdateSiteSettings.png "CODE install over Eclipse>Help>Install new software ...")
+
+
+##### Offline
+1. Download CODE repository from https://github.com/bastie/CODE/archive/master.zip and extract this.
+2. Select `Install New Software` (Help Menu), add the `CODE UpdateSite` directory from extracted CODE 
+

@@ -10,6 +10,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>EclipseUpdateSiteSettings.png</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/EclipseUpdateSiteSettings.png</locationURI>
+		</link>
+		<link>
 			<name>LICENSE.md</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/LICENSE.md</locationURI>
